@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop distribution | Deforestation | Biodiversity</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <div id="controls">
+      <div id="wrapper">
+        <div class="subwrapper">
+          <label for="mapSelect">Select Map: </label>
+          <select id="mapSelect"></select>
+          <label for="itemSelect">Select Item: </label>
+          <select id="itemSelect"></select>
+        </div>
+        <div class="subwrapper">
+          <input type="range" id="yearSlider" min="1961" max="2022" value="2022">
+          <div id="yearDisplay">2022</div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="static/js/logic.js"></script>
+</body>
+</html>
